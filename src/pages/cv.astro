@@ -5,14 +5,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Developer Philosophy</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    I spend alot of my freetime keeping up with the latest trends in Software Development learning from Successes and Failures. My education coupled with my work experience has given me these three rules.
+    <div class="ml-8 w-3/4 my-4">
+      <li>Fast by default: Computers are fast, but Software can be wasteful. $1,000,000 is alot until you spend $800,000.</li>
+      <li>Code has Cost: In the Cloud, a Website or on a Users machine. The code we write has some cost. We should strive for minimal costs and maximum benefits.</li>
+      <li>Robustness is a Feature: Most interesting things are error prone, catching all possible errors and competent handling is essential.</li>
+    </div>
+    These are my general rule about the end product. There are others regarding styles, paradigms, and tool selection. Ideally, my GitHub give you an ideal of the quality of code I aim to write.
   </div>
 
   <div class="mb-5">
@@ -21,13 +24,14 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
+      title="BS: Information, Science, and Technology"
+      subtitle="2018 to 2022 at Pennsylvania State Univerity, State College, USA"
+    />
+    <!-- <TimeLineElement
       title="Title Name"
       subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
     />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+    -->
   </div>
 
   <div class="mb-5">
@@ -36,26 +40,27 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Full Stack Developer (Contract)"
+      subtitle="From Feb 2022 to July 2022 at GoQuant, Miami, USA"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <div class="pl-7">
+        <li> Developing low-latency data pipeline for a crypto-currency websocket server.. </li>
+        <li> Creating a multi-language library with a Rust centered static library using FFI. </li>
+        <li> Architect, write, test, and maintain various web applications using the Cargo Tool chain and Community libraries. </li>
+        <li> Using Tokio & Actix for async operations while avoiding unnecessary data locking patterns. </li>
+      </div>
+
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Full Stack Developer"
+      subtitle="From Sep 2021 to Feb 2023 at Plexus Parc, Pittsburg, USA"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
     </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+     
   </div>
 
-  <div class="mb-5">
+  <!-- <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
@@ -67,26 +72,56 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <a href="#" target="_blank"> Certification Name (with link)</a>
     </li>
   </ul>
-
+  -->
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold"></div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+ <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Software Skills</div>
+  </div>
+
+
+  <ul class="list-disc md:columns-5 columns-2 ml-6">
+    <li>Rust</li>
+    <li>Go</li>
+    <li>TypeScript/JavaScript</li>
+    <li>Memory Profiling</li>
+    <li>Performance Tuning</li>
+    <li>Algo Optimization</li>
+    <li>Data Structures</li>
+    <li>Design Patterns</li>
+    <li class="whitespace-nowrap">JSON / Yaml / XML</li>
+    <li>Graphql & REST</li>
+    <li class="whitespace-nowrap">All major OS's</li>
+    <li>React</li>
+    <li>Vue</li>
+    <li>TailwindCSS</li>
+    <li>Git & GitHub</li>
+    <li>AWS & Cloud</li>
+    <li>Docker</li>
+    <li>NeoVim / Vim</li>
+  </ul>
+
+
+  <div class="my-5">
+    <div class="text-3xl w-full font-bold">Sound Design Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 ml-6">
+    <li>Musicals</li>
+    <li>Plays</li>
+    <li>New Works</li>
+    <li class="whitespace-nowrap">Sound Reinforcement</li>
+    <li>QLab</li>
+    <li>Logic Pro</li>
+    <li>A2 & Assisting</li>
+    <li>VectorWorks</li>
+    <!-- <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li> -->
   </ul>
 </BaseLayout>

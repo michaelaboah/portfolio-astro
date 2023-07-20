@@ -10,18 +10,15 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">Michael Aboah</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer and Sound Designer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        I am a Software Engineer by profession and a Theatrical Sound Designer by education and experience. Most of my non-professional work includes creating theatre specific software using modern software tools and practices. Feel free to look at my projects below and contact me if your interested about anything!
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
+      <!-- <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a> -->
       <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
         Get This template
       </a>
@@ -29,30 +26,23 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My lastest projects {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="Sonic Sync"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    desc="Sonic Sync is a tool designed for theatrical sound design and audio production. It aims to streamline and synchronize the various elements of the design process, including cable layouts, signal flow, and equipment lists. SonicSync provides a unified platform where Sound Designers can manage and integrate there equipment. Written in Rust/Typescript"
+    url="https://github.com/michaelaboah/SonicSync"
+    badge="Rust"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="Sonic Sync Cloud"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="The Cloud service that allows users of the Sonic Sync desktop app to download & upload equipment for any and every user."
+    badge="Go"
     url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
   />
 
   <div>
