@@ -4,8 +4,10 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Developer Philosophy</div>
+  <div class="mb-5 flex flex-row">
+    <div class="text-3xl font-bold">Developer Philosophy</div>
+    <div class="grow"></div>
+    <a href="public/pdf/Rust Resume.pdf" class="btn btn-outline ml-5">Resume</a>
   </div>
 
   <div class="mb-10 text-justify">
@@ -43,11 +45,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       title="Full Stack Developer (Contract)"
       subtitle="From Feb 2022 to July 2022 at GoQuant, Miami, USA"
     >
-      <div class="pl-7">
+      <div class="pl-7 mb-4">
         <li> Developing low-latency data pipeline for a crypto-currency websocket server.. </li>
         <li> Creating a multi-language library with a Rust centered static library using FFI. </li>
-        <li> Architect, write, test, and maintain various web applications using the Cargo Tool chain and Community libraries. </li>
-        <li> Using Tokio & Actix for async operations while avoiding unnecessary data locking patterns. </li>
+        <li> Using Go for utility based services such as Authentication and Authorization with Postgres.</li>
+        <li> Using profiling tools for finding memory leaks and performance bottlenecks.</li>
       </div>
 
     </TimeLineElement>
