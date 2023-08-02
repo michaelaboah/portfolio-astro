@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
+// import { getCollection } from "astro:content";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const last_posts = posts.slice(0, 3);
+// const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -41,6 +41,7 @@ const last_posts = posts.slice(0, 3);
     img="/images/sonic-sync-cloud.jpg"
     desc="The Cloud service that allows users of the Sonic Sync desktop app to download & upload equipment for any and every user."
     badge="In Progress"
+    url="https://github.com/michaelaboah/SonicSync/tree/master/cloud"
     format="png"
     tags={["Go", "MongoDB", "GraphQL"]}
   />
